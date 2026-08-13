@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
 const isCloudflare = process.env.CF_PAGES === '1';
-const base = isCloudflare ? undefined : '/TLBv1';
+const base = isCloudflare ? undefined : '/TLB-Dev';
 
 /**
  * Prefixes root-relative links written inside markdown bodies with the configured
