@@ -1,0 +1,26 @@
+PAGE: EV Charger Repair & Troubleshooting (EV Charger Installation silo) [NEW PAGE]
+URL: /ev-charger-repair-moncton
+
+BROWSER TAB TITLE
+EV Charger Repair & Troubleshooting | TLB Electric
+
+PAGE HEADING (H1)
+EV Charger Repair & Troubleshooting
+
+META DESCRIPTION
+EV charger not charging, tripping breakers, or showing a fault code? Licensed diagnosis and repair in Moncton, Dieppe & Riverview, NB. Free quotes.
+
+INTRO
+A home or commercial EV charger that won't power on, won't charge fully, or trips a breaker usually points to a wiring, connection, or circuit problem rather than the charger itself. TLB Electric diagnoses and repairs EV charger installations, whether we installed them or not.
+
+WHAT'S INCLUDED
+- Diagnosis of chargers that won't power on, won't charge fully, or trip breakers
+- Repair of loose connections, damaged wiring, and failed circuits feeding the charger
+- Troubleshooting third-party or builder-installed chargers we didn't originally install
+- Load reassessment if the charger has never run reliably at full speed
+- Clear diagnosis before any repair, so you know what's actually wrong first
+
+BODY COPY
+Charger problems that look like a defective unit are, more often than not, a circuit that was undersized from the start or a connection that's worked itself loose. TLB Electric starts every repair call with a proper diagnosis at the panel and the charger's dedicated circuit, not a guess based on the charger's brand or age.
+
+If the charger was installed by another contractor or came with a new build, we're glad to take on the repair without requiring a full reinstall. In some cases the fix is a simple connection repair; in others, a charger that's never run at full speed reveals a panel that was already close to its limit and needs a closer look.

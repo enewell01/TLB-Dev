@@ -1,0 +1,35 @@
+---
+title: "Federal Pioneer Panel Replacement in Riverview, NB | TLB Electric"
+h1: "Federal Pioneer Stab-lok Panel Replacement in Riverview, NB"
+metaDescription: "Replacing Federal Pioneer Stab-lok panels in Riverview, NB. Common in 1960s-70s homes and a known insurance issue. Licensed electrician, free quotes."
+targetKeyword: "Federal Pioneer panel replacement Riverview NB"
+category: "panel-upgrades-moncton"
+type: "geo"
+city: "Riverview"
+relatedServices: ["federal-pioneer-panel-replacement-moncton", "electrical-panel-upgrade-riverview-nb", "electrician-riverview-nb"]
+intro: "If your Riverview home was built between roughly 1960 and 1980, there is a real chance the panel in your basement is a Federal Pioneer Stab-lok. It was the standard panel in Canadian construction through exactly the years Riverview did most of its growing, which is why we replace more of them here than almost anywhere else in the Moncton area."
+overview: "Identification of Stab-lok equipment, whether that is the panel, the breakers, or both, and full replacement with modern breakers. A 200A service upgrade can be done at the same time where the load calls for it. Circuits are labeled at completion and the work is documented for your insurer."
+localRelevance: "Riverview was built out largely in the 1960s and 70s as Moncton's bedroom community, putting a very large share of its housing stock squarely in the Stab-lok era."
+areaLabel: "Federal Pioneer Panels"
+order: 4
+---
+
+## Why this panel gets replaced
+
+Federal Pioneer Stab-lok breakers have a documented history of failing to trip when they should. A breaker that doesn't trip on an overcurrent is not a minor defect. The breaker is the thing standing between a fault and a fire, and its only job is to open the circuit. The failure rate isn't 100%, which is part of what makes it insidious: the panel works normally for years, and the problem only shows up in the one moment it matters.
+
+The issue is well enough established that many Canadian insurers now ask about it directly. We regularly get calls from Riverview homeowners who were fine until a renewal or a home inspection during a sale flagged the panel. Replacement resolves both the safety problem and the paperwork one.
+
+## Why Riverview specifically
+
+Riverview's growth timeline lines up almost exactly with the period when Stab-lok was standard. The town amalgamated in 1973, and much of Bridgedale, Riverview Heights, and the streets that filled in around them went up through the 1960s and 70s. Those houses got what everyone was installing at the time. It wasn't a bad choice by the builders, since the problem wasn't understood then, but it means a large fraction of Riverview's original panels are the ones now recommended for replacement.
+
+If you're in a Riverview home of that vintage and you've never had the panel looked at, it's worth a check. Take the cover off and look for the Federal Pioneer name, or the distinctive Stab-lok breakers with the red stripe across the toggle. If you're not comfortable doing that, we'll look at it during a quote.
+
+## What replacement involves
+
+A panel swap is a day's work in most cases. Power is off for a good portion of it while every circuit is transferred to the new panel, and each one gets identified and labeled as it moves. Most of the panels we replace are labeled poorly or not at all, and this is the opportunity to fix that permanently.
+
+The question worth deciding at the same time is whether to stay at your existing service size or go to 200A. Many Riverview homes of this era run 100A, which was generous in 1970 and is tight now. If you're planning an EV charger, a heat pump, or a basement development, doing the [service upgrade](/electrical-panel-upgrade-riverview-nb) in the same visit costs far less than coming back for it later. If you're not, a straight replacement at your current size is a perfectly good answer and we'll say so.
+
+Aluminum branch wiring often turns up in the same houses, since it was in common use over an overlapping period. If we find it while the panel is open, we'll tell you what's there and what it would take to address, without bundling it into the quote unless you want it.

@@ -1,0 +1,16 @@
+PAGE: EV Charger Installation (Category)
+URL: /ev-charging-moncton
+
+BROWSER TAB TITLE
+EV Charger Installation Services in Moncton, NB | TLB Electric
+
+PAGE HEADING (H1)
+EV Charger Installation
+
+META DESCRIPTION
+Home, commercial, and multi-unit EV charger installation in Moncton, Dieppe & Riverview, NB. Licensed electricians size the circuit and panel correctly.
+
+BODY COPY
+TLB Electric installs EV chargers for homes, businesses, and multi-unit properties across Moncton, Dieppe, and Riverview — sized correctly to your panel's actual capacity, not just the minimum needed to get a car charging. Every installation is permitted, inspected, and built to handle today's load and tomorrow's.
+
+[This page links out to the 5 EV charging service pages below it]

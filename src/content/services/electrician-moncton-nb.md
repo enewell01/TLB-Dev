@@ -1,0 +1,33 @@
+---
+title: "Local Electrician in Moncton, NB | TLB Electric"
+h1: "Your Local Electrician in Moncton, NB"
+metaDescription: "Licensed local electrician working across Moncton: West End, Sunny Brae, Lewisville, the North End and downtown. Wiring, panels, repairs. Free quotes from TLB Electric."
+targetKeyword: "local electrician Moncton NB"
+category: "residential-electrical-moncton"
+type: "geo"
+city: "Moncton"
+relatedServices: ["electrical-panel-upgrade-moncton", "home-rewiring-moncton", "emergency-electrician-moncton", "electrician-dieppe-nb", "electrician-riverview-nb"]
+intro: "Moncton isn't one electrical market. It's several. A century home off Church Street, a post-war bungalow in the West End, a 1970s split-level in Lewisville, and a new build out past Magnetic Hill each present a completely different panel, a different wiring vintage, and a different set of problems. TLB Electric works across all of them, and we quote after looking at what's actually in your house."
+overview: "General residential and commercial electrical work across Moncton, covering panel upgrades and service increases, full and partial rewiring, outlet and lighting work, EV chargers and heat pump circuits, and emergency repair. Permits and TISNB inspection are handled where the job requires them."
+localRelevance: "We work from the oldest housing stock near downtown and the West End through to the newest subdivisions on the city's north and west edges, and the age of the neighbourhood usually tells us what we'll find behind the panel cover before we take it off."
+areaLabel: "Local Electrician"
+order: 1
+---
+
+## What we find in each part of the city
+
+**The West End and Sunny Brae** hold a lot of Moncton's pre-1960 housing. This is where we see the oldest systems in the city: 60A services that were never increased, cloth-sheathed wiring, the occasional stretch of surviving knob-and-tube in an attic or crawlspace, and panels that have been added to repeatedly over sixty years. These homes are usually well built, but the electrical system was designed for a fraction of the load a modern household puts on it. A service upgrade is often the first thing worth looking at in these houses.
+
+**Downtown and the older streets near Main** include century homes and mixed-use buildings, some converted to apartments along the way. Conversions are where documentation tends to break down: panels serving units that aren't labeled, circuits crossing between suites, and subpanels added without a clear record. We start those jobs by mapping what's actually there.
+
+**Lewisville, Elmwood, and the 1960s and 70s subdivisions** are the aluminum wiring and Federal Pioneer belt. Both were standard practice when these houses went up, and both are now recognized problems: aluminum branch wiring at receptacles and switches needs proper remediation, and Stab-lok panels have a documented history of breakers failing to trip. If your house dates from this era, these are the two things worth having looked at.
+
+**The North End and the newer subdivisions** toward Magnetic Hill and the city's outer edges are wired to modern code, and the work here is usually additive rather than corrective: finished basements, garages and workshops, hot tubs, EV chargers, heat pump circuits. The common constraint isn't unsafe wiring, it's a service that was sized conservatively when the house was built and is now close to full.
+
+## How we work in Moncton
+
+We're a mobile contractor. There's no showroom to visit, we come to the property. Quotes come after seeing the panel and the actual conditions, because in a city with this range of housing ages, a flat rate quoted over the phone is either padded or wrong.
+
+Permits and inspections in New Brunswick go through Technical Inspection Services (TISNB), and we handle that paperwork on jobs that require it rather than leaving it with the homeowner. Work is left labeled and documented, so the next person to open the panel, including us years from now, can tell what's going on.
+
+We also cover [Dieppe](/electrician-dieppe-nb) and [Riverview](/electrician-riverview-nb) from the same base.

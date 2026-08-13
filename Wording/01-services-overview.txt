@@ -1,0 +1,110 @@
+PAGE: Services Overview
+URL: /services
+
+BROWSER TAB TITLE
+Electrical Services in Moncton, NB | TLB Electric
+
+PAGE HEADING (H1)
+Our Electrical Services
+
+META DESCRIPTION
+Residential, commercial, panel upgrades, and EV/emergency electrical services in Moncton, Dieppe & Riverview, NB. Licensed electrician. Free quotes.
+
+INTRO
+TLB Electric covers residential, commercial, panel and power, EV charging, new construction, and emergency electrical work across Moncton, Dieppe, and Riverview. Everything we do is listed below.
+
+SECTION INTROS (one per service category on this page)
+
+Residential Electrical Services in Moncton, Dieppe & Riverview
+TLB Electric handles the full range of residential electrical work for homes across Moncton, Dieppe, and Riverview, from rewiring older houses and replacing outdated wiring to installing lighting, fans, outlets, and hot tub hookups. Every job is performed by a licensed electrician and left safe, clean, and code-compliant.
+
+Services listed in this section:
+- Home Rewiring in Moncton, Dieppe & Riverview
+- Electrical Outlet & Switch Installation
+- Residential Lighting Installation & Upgrades
+- Ceiling Fan Installation
+- Home Electrical Inspections
+- Knob & Tube Wiring Replacement
+- Aluminum Wiring Repair
+- Mini Split & Heat Pump Wiring in Moncton, Dieppe & Riverview
+- Hot Tub & Pool Electrical Hookups
+
+Commercial & Industrial Electrical Services
+TLB Electric provides commercial and industrial electrical services for businesses across Moncton, Dieppe, and Riverview, from new wiring and lighting installations to ongoing maintenance, retrofits, and code compliance inspections. Every job is performed by a licensed electrician and scheduled to minimize disruption to your operation.
+
+Services listed in this section:
+- Commercial Electrical Wiring
+- Office & Retail Lighting Installation
+- Commercial Electrical Maintenance
+- Industrial Electrical Services
+- Commercial Lighting Retrofits: NB Power Grant Eligible
+- Electrical Code Compliance & Inspections
+
+Electrical Panel & Power Upgrade Services
+TLB Electric upgrades and modernizes electrical panels across Moncton, Dieppe, and Riverview, from routine 100-to-200-amp upgrades to Federal Pioneer replacements, generator hookups, and whole-home surge protection. Every job is performed by a licensed electrician and left in code-compliant condition.
+
+Services listed in this section:
+- Electrical Panel Upgrades
+- Federal Pioneer Panel Replacement
+- Generator Hookups & Generlink Installation
+- Circuit Breaker Replacement & Repair
+- Whole-Home Surge Protection
+
+EV Charger Installation
+TLB Electric installs EV chargers for homes, businesses, and multi-unit properties across Moncton, Dieppe, and Riverview, sized correctly to your panel's actual capacity, not just the minimum needed to get a car charging. Every installation is permitted, inspected, and built to handle today's load and tomorrow's.
+
+Services listed in this section:
+- Home EV Charger Installation
+- Commercial EV Charger Installation
+- EV Charger Repair & Troubleshooting
+- Multi-Unit & Condo EV Charging Installation
+- EV Charger Panel & Circuit Upgrades
+
+New Construction
+TLB Electric works directly with builders, general contractors, and owner-builders on new construction and renovation electrical work across Moncton, Dieppe, and Riverview, from rough-in wiring on a new build to garage, basement, and outdoor living space wiring on an existing property.
+
+Services listed in this section:
+- New Construction Electrical Rough-In
+- Electrical Renovations & Additions
+- Garage & Workshop Electrical Wiring
+- Basement Development Wiring
+- Deck, Patio & Outdoor Living Electrical
+
+Emergency Services
+TLB Electric provides 24/7 emergency electrical response for homes and businesses across Moncton, Dieppe, and Riverview, for situations that can't wait for a regular appointment, with honest guidance on what's truly urgent and clear pricing before any work begins.
+
+Services listed in this section:
+- 24/7 Emergency Electrical Repair
+- Hardwired Smoke & CO Detector Installation
+- Storm & Weather Damage Electrical Repair
+- Commercial Emergency Electrical Repair
+- After-Hours Electrical Service
+
+SERVICE AREAS BLOCK
+TLB Electric is a mobile electrical contractor covering Moncton, Dieppe, and Riverview. Each area has its own housing stock and its own common electrical problems. The pages below cover what we run into most in each one.
+
+Moncton
+- Local Electrician
+- Emergency Electrician
+- Panel Upgrades
+- EV Charger Installation
+- Home Rewiring
+- Hot Tub & Pool Hookups
+- Federal Pioneer Panels
+- Knob & Tube Replacement
+
+Dieppe
+- Local Electrician
+- Emergency Electrician
+- Panel Upgrades
+- EV Charger Installation
+- Home Rewiring
+- Hot Tub & Pool Hookups
+
+Riverview
+- Local Electrician
+- Emergency Electrician
+- Panel Upgrades
+- Federal Pioneer Panels
+- Knob & Tube Replacement
+- Home Rewiring

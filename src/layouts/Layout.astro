@@ -2,11 +2,13 @@
 interface Props {
   title?: string;
   description?: string;
+  additionalSchemas?: Record<string, any>[];
 }
 
 const {
   title = 'TLB Electric | Licensed Electrician in Moncton, NB',
-  description = 'TLB Electric — licensed electrician serving Moncton, NB. Residential & commercial wiring, panel upgrades, EV chargers, and emergency electrical services.',
+  description = 'TLB Electric, licensed electrician serving Moncton, NB. Residential & commercial wiring, panel upgrades, EV chargers, and emergency electrical services.',
+  additionalSchemas = [],
 } = Astro.props;
 
 const siteUrl = 'https://tlbelectric.ca';
@@ -21,6 +23,7 @@ const schema = {
   "telephone": "+15068755337",
   "email": "info@TLBELECTRIC.ca",
   "url": siteUrl,
+  "hasMap": "https://www.google.com/maps/place/?q=place_id:ChIJ02xlBFQPvgERDzFNs4SGU7c",
   "priceRange": "$$",
   "description": "Licensed electrical contractor serving the Greater Moncton area. Residential, commercial, panel upgrades, EV charger installation, new construction, and emergency electrical services.",
   "address": {
@@ -28,11 +31,6 @@ const schema = {
     "addressLocality": "Moncton",
     "addressRegion": "NB",
     "addressCountry": "CA"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 46.0878,
-    "longitude": -64.7782
   },
   "areaServed": [
     { "@type": "City", "name": "Moncton" },
@@ -90,9 +88,12 @@ const schema = {
 
     <!-- LocalBusiness structured data -->
     <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    {additionalSchemas.map((s) => (
+      <script type="application/ld+json" set:html={JSON.stringify(s)} />
+    ))}
 
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/favicon.svg`} />
+    <link rel="apple-touch-icon" href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/favicon.svg`} />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

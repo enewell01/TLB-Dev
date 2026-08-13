@@ -1,0 +1,39 @@
+---
+// src/components/MapEmbed.astro
+---
+
+<section class="map-embed">
+  <div class="container">
+    <p class="section-label">Where We Work</p>
+    <h2 class="section-title">Proudly Serving Greater Moncton</h2>
+    <p class="section-subtitle">
+      TLB Electric is a mobile electrical contractor covering Moncton, Dieppe, Riverview, and the surrounding Greater Moncton area, no storefront visit required, we come to you.
+    </p>
+    <div class="map-frame">
+      <iframe
+        title="TLB Electric service area: Moncton, Dieppe & Riverview, NB"
+        src="https://maps.google.com/maps?ll=46.0878,-64.7782&z=11&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+<style>
+  .map-embed { padding: 5rem 0; background: var(--white); }
+  .map-embed .section-label,
+  .map-embed .section-title,
+  .map-embed .section-subtitle { text-align: center; margin-left: auto; margin-right: auto; }
+  .map-embed .section-subtitle { margin-bottom: 2rem; }
+  .map-frame {
+    width: 100%;
+    aspect-ratio: 16 / 6;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .map-frame iframe { width: 100%; height: 100%; border: 0; }
+  @media (max-width: 700px) {
+    .map-frame { aspect-ratio: 4 / 5; }
+  }
+</style>

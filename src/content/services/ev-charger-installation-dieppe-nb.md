@@ -1,0 +1,25 @@
+---
+title: "EV Charger Installation in Dieppe, NB | TLB Electric"
+h1: "EV Charger Installation in Dieppe, NB"
+metaDescription: "Level 2 home EV charger installation for Dieppe garages and driveways. Load calculation, dedicated circuit, permits handled. Free quotes from TLB Electric."
+targetKeyword: "EV charger installation Dieppe NB"
+category: "ev-charging-moncton"
+type: "geo"
+city: "Dieppe"
+relatedServices: ["ev-charger-installation-moncton", "electrical-panel-upgrade-dieppe-nb", "electrician-dieppe-nb"]
+intro: "Dieppe has one of the higher rates of EV adoption in the Moncton area, and its housing suits it: attached garages, private driveways, and panels that are usually close enough to the parking spot to keep the run short. TLB Electric installs Level 2 chargers throughout Dieppe, starting with a load calculation so you know whether your service can carry it before you buy the unit."
+overview: "Level 2 charger installation in attached or detached garages and driveways, starting with a load calculation to confirm the existing service can carry it. Covers a dedicated circuit sized to the unit, hardwired or receptacle installation, outdoor-rated equipment for driveway installs, and TISNB inspection."
+localRelevance: "Most Dieppe homes were built with an attached garage and a 100A or 200A service, which makes for short, clean charger runs. The limiting factor is almost always spare panel capacity, not distance."
+areaLabel: "EV Charger Installation"
+order: 4
+---
+
+The install itself is usually straightforward in Dieppe. What decides the cost is what we find at the panel.
+
+If your house was built in the last fifteen years with a 200A service and has open breaker slots, this is a short job: a dedicated circuit, a run to the garage wall, and the unit mounted and tested. If your house has a 100A service already carrying a heat pump, an electric range, and a dryer, the load calculation may show you need either a load management device or a [service upgrade](/electrical-panel-upgrade-dieppe-nb) first. Neither is a problem, but both change the number, and you should know which one you're looking at before the charger arrives rather than after.
+
+Load management is worth understanding because it often saves a Dieppe homeowner the cost of a full service upgrade. These devices let the charger share capacity with another large load, typically by pausing charging when the range or dryer is drawing heavily. Since most EVs charge overnight when nothing else is running, the practical impact is close to zero. When a customer is facing a panel upgrade purely to add a charger, this is usually the first thing we look at.
+
+For driveway installs without a garage, which is more common on Dieppe's older streets near Chartersville, the equipment has to be properly outdoor rated and the penetration properly sealed. Winters here put real stress on exterior equipment, and a charger mounted with an unsealed penetration will let water track back into the wall. We mount and flash these to hold up.
+
+If you're also considering a heat pump, mention it when we quote. Sizing the service once for both is meaningfully cheaper than doing it twice, and it's a very common pairing in Dieppe right now.

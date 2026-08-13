@@ -1,0 +1,60 @@
+TLB ELECTRIC — PLANNED WEBSITE SERVICES
+=======================================
+6 service categories + 37 individual service pages (43 pages total,
+plus the homepage and the /services overview page = 45).
+URL pattern: tlbelectric.ca/<slug>
+
+RESIDENTIAL ELECTRICAL SERVICES  (/residential-electrical-moncton)
+-----------------------------------------------------------------
+  - Home Rewiring — home-rewiring-moncton
+  - Electrical Outlet & Switch Installation — outlet-switch-installation-moncton
+  - Residential Lighting Installation & Upgrades — lighting-installation-moncton
+  - Ceiling Fan Installation — ceiling-fan-installation-moncton
+  - Home Electrical Inspections — home-electrical-inspection-moncton
+  - Knob & Tube Wiring Replacement — knob-and-tube-wiring-replacement-moncton
+  - Aluminum Wiring Repair — aluminum-wiring-repair-moncton
+  - Hot Tub & Pool Electrical Hookups — hot-tub-pool-electrical-hookup-moncton
+  - Electrician in Dieppe, NB — electrician-dieppe-nb
+  - Electrician in Riverview, NB — electrician-riverview-nb
+
+COMMERCIAL & INDUSTRIAL ELECTRICAL  (/commercial-electrical-moncton)
+-------------------------------------------------------------------
+  - Commercial Electrical Wiring — commercial-electrical-wiring-moncton
+  - Office & Retail Lighting Installation — office-retail-lighting-moncton
+  - Commercial Electrical Maintenance — commercial-electrical-maintenance-moncton
+  - Industrial Electrical Services — industrial-electrical-services-moncton
+  - Commercial Lighting Retrofits (NB Power grant eligible) — commercial-lighting-retrofit-moncton
+  - Electrical Code Compliance & Inspections — electrical-code-compliance-inspection-moncton
+
+ELECTRICAL PANEL & POWER UPGRADES  (/panel-upgrades-moncton)
+------------------------------------------------------------
+  - Electrical Panel Upgrades — electrical-panel-upgrade-moncton
+  - Federal Pioneer Panel Replacement — federal-pioneer-panel-replacement-moncton
+  - Generator Hookups & Generlink Installation — generator-hookup-generlink-installation-moncton
+  - Circuit Breaker Replacement & Repair — circuit-breaker-replacement-moncton
+  - Whole-Home Surge Protection — whole-home-surge-protection-moncton
+
+EV CHARGER INSTALLATION  (/ev-charging-moncton)
+-----------------------------------------------
+  - Home EV Charger Installation — ev-charger-installation-moncton
+  - Commercial EV Charger Installation — commercial-ev-charger-installation-moncton
+  - EV Charger Repair & Troubleshooting — ev-charger-repair-moncton
+  - Multi-Unit & Condo EV Charging — multi-unit-ev-charging-moncton
+  - EV Charger Panel & Circuit Upgrades — ev-charger-panel-upgrade-moncton
+
+NEW CONSTRUCTION  (/new-construction-electrician-moncton)
+---------------------------------------------------------
+  - New Construction Electrical Rough-In — new-construction-electrical-moncton
+  - Electrical Renovations & Additions — electrical-renovation-addition-moncton
+  - Garage & Workshop Electrical Wiring — garage-workshop-wiring-moncton
+  - Basement Development Wiring — basement-development-wiring-moncton
+  - Deck, Patio & Outdoor Living Electrical — outdoor-living-electrical-moncton
+
+EMERGENCY SERVICES  (/emergency-electrical-services-moncton)
+------------------------------------------------------------
+  - 24/7 Emergency Electrical Repair — emergency-electrician-moncton
+  - Hardwired Smoke & CO Detector Installation — smoke-co-detector-installation-moncton
+  - Storm & Weather Damage Electrical Repair — storm-damage-electrical-repair-moncton
+  - Commercial Emergency Electrical Repair — commercial-emergency-electrician-moncton
+  - After-Hours Electrical Service — after-hours-electrician-moncton
+  - Emergency Electrician in Dieppe, NB — emergency-electrician-dieppe-nb

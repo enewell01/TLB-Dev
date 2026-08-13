@@ -1,0 +1,17 @@
+---
+title: "Ceiling Fan Installation in Moncton, NB | TLB Electric"
+h1: "Ceiling Fan Installation"
+metaDescription: "Licensed ceiling fan installation and replacement in Moncton, Dieppe & Riverview, NB, with proper bracing and wiring. Free quotes from TLB Electric."
+targetKeyword: "ceiling fan installation Moncton"
+category: "residential-electrical-moncton"
+relatedServices: ["lighting-installation-moncton", "outlet-switch-installation-moncton"]
+intro: "A ceiling fan needs more than a mounting bracket and a wire nut. It needs a properly rated electrical box that can support the weight and vibration of a running fan. TLB Electric installs and replaces ceiling fans the right way, every time."
+overview: "Installation of new ceiling fans and replacement of existing ones, including the fan-rated box needed if the current box isn't rated for the weight. Covers separate fan and light switching, wall controls, and remotes, indoors or on a covered exterior space."
+order: 4
+---
+
+Most ceiling fan problems trace back to the box it's mounted on, not the fan itself. A standard light fixture box isn't built to handle a fan's weight or the wobble it creates over time, and a fan hung on the wrong box can eventually work loose or damage the ceiling around it. Before we hang anything, we confirm the box is fan-rated and properly secured to the framing.
+
+Wiring is the other half of the job. Fans with separate light and fan controls need the right wiring run to the switch location, and remote-controlled units need their receiver installed correctly to avoid interference or delayed response. We handle both so the fan works the way it's supposed to from day one, not just on the first test run.
+
+Whether it's a straightforward swap of an old fan for a new one or a first-time install in a room that's never had one, the process is the same: confirm the box and framing can take the load, wire it properly, and mount the fan so it runs quiet and balanced.

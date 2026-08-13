@@ -1,0 +1,18 @@
+---
+title: "Whole-Home Surge Protection | TLB Electric"
+h1: "Whole-Home Surge Protection"
+metaDescription: "Protect your home's electronics and appliances from power surges with a whole-home surge protector installed at the panel. Free quotes from TLB Electric."
+targetKeyword: "surge protection installation Moncton"
+category: "panel-upgrades-moncton"
+relatedServices: ["electrical-panel-upgrade-moncton", "generator-hookup-generlink-installation-moncton"]
+intro: "A single power surge, from a storm, a grid switch, or your own appliances cycling, can damage electronics throughout your home in an instant. TLB Electric installs whole-home surge protection at the panel so every circuit is covered, not just the outlets with a power bar plugged in."
+overview: "A surge protector installed at the electrical panel, covering appliances, electronics, and HVAC equipment on every circuit. Includes a compatibility check against your existing panel and service size, and coordination with a generator hookup where one is installed."
+localRelevance: "Moncton's weather swings between summer thunderstorms and winter storms that stress the grid, both of which can send damaging surges through a home's wiring."
+order: 5
+---
+
+A power bar with surge protection only protects whatever's plugged into it. A whole-home surge protector installed at your electrical panel protects every circuit in the house at once, including the furnace, well pump, refrigerator, and home electronics, from voltage spikes caused by lightning strikes, grid switching, or utility restoration after an outage.
+
+Whole-home surge protection is a natural add-on to a panel upgrade, since the device mounts directly in or beside the panel and ties into the same service. It's also worth pairing with a generator hookup: the moment power is restored, whether from the grid or from switching a generator on or off, is one of the more common times a surge can occur, and a whole-home protector covers that transition too.
+
+For a modest cost compared to the electronics and appliances it protects, whole-home surge protection is one of the more straightforward upgrades a homeowner can make. TLB Electric selects a unit sized to your panel and service, and installs it as a standalone job or as part of a larger panel upgrade.

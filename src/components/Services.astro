@@ -1,36 +1,5 @@
 ---
-const services = [
-  {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>`,
-    title: 'Residential Electrical',
-    description: 'New installations, rewiring, outlets, lighting, and all your home electrical needs handled safely by a licensed electrician.',
-  },
-  {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 7V3H2v18h20V7H12zm-2 12H4v-2h6v2zm0-4H4v-2h6v2zm0-4H4V9h6v2zm0-4H4V5h6v2zm10 12h-8V9h8v10zm-2-8h-4v2h4v-2zm0 4h-4v2h4v-2z"/></svg>`,
-    title: 'Commercial Electrical',
-    description: 'Office buildings, retail, and industrial spaces. We keep your business powered up and up to code.',
-  },
-  {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/></svg>`,
-    title: 'Panel Upgrades',
-    description: 'Outdated or overloaded panel? We upgrade electrical panels to meet modern demands safely and efficiently.',
-  },
-  {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 7H16V4l-3-3H5C3.9 1 3 1.9 3 3v11c0 1.1.9 2 2 2h1v2c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2v-9c0-1.66-1.34-3-3-3zm0 13H8v-2h6c1.1 0 2-.9 2-2V9h1.5c.83 0 1.5.67 1.5 1.5V18c0 1.1-.9 2-2 2z"/></svg>`,
-    title: 'EV Charger Installation',
-    description: 'EV charger installation for your home or business. Fast, safe, and done to code.',
-  },
-  {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5C3.9 3 3 3.9 3 5v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>`,
-    title: 'New Construction',
-    description: 'Full electrical rough-in and finish work for new builds. We work with your contractor from blueprint to completion.',
-  },
-  {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>`,
-    title: 'Emergency Services',
-    description: 'Electrical emergencies don\'t wait. When something goes wrong, TLB Electric is ready to respond fast.',
-  },
-];
+import CategoryGrid from './CategoryGrid.astro';
 ---
 
 <section class="services" id="services">
@@ -39,19 +8,11 @@ const services = [
       <p class="section-label">What We Do</p>
       <h2 class="section-title">Electrical Services You Can Count On</h2>
       <p class="section-subtitle">
-        From a single outlet to a full custom home, TLB Electric brings skilled, licensed work to every job in Greater Moncton.
+        From a single outlet to a full custom home, TLB Electric brings skilled, licensed work to every job in Greater Moncton, Dieppe &amp; Riverview.
       </p>
     </div>
 
-    <div class="services-grid">
-      {services.map(service => (
-        <div class="service-card">
-          <div class="service-icon" set:html={service.icon} />
-          <h3 class="service-title">{service.title}</h3>
-          <p class="service-description">{service.description}</p>
-        </div>
-      ))}
-    </div>
+    <CategoryGrid />
 
     <div class="services-footer">
       <p>Don't see your project listed? We handle it all.</p>
@@ -75,51 +36,6 @@ const services = [
     margin: 0 auto;
   }
 
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
-
-  .service-card {
-    background: var(--white);
-    border-radius: 8px;
-    padding: 2rem;
-    border: 1px solid var(--gray);
-    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-  }
-
-  .service-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 32px rgba(54, 52, 54, 0.1);
-    border-color: var(--red);
-  }
-
-  .service-icon {
-    width: 44px;
-    height: 44px;
-    color: var(--red);
-    margin-bottom: 1.25rem;
-  }
-
-  .service-icon svg {
-    width: 100%;
-    height: 100%;
-  }
-
-  .service-title {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--charcoal);
-    margin-bottom: 0.625rem;
-  }
-
-  .service-description {
-    font-size: 0.925rem;
-    color: var(--text-muted);
-    line-height: 1.65;
-  }
-
   .services-footer {
     display: flex;
     align-items: center;
@@ -134,17 +50,5 @@ const services = [
     font-weight: 600;
     color: var(--charcoal);
     font-size: 1rem;
-  }
-
-  @media (max-width: 900px) {
-    .services-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  @media (max-width: 560px) {
-    .services-grid {
-      grid-template-columns: 1fr;
-    }
   }
 </style>

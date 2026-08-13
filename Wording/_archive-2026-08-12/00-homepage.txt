@@ -1,0 +1,122 @@
+PAGE: Homepage
+URL: /
+
+============================================================
+BROWSER TAB TITLE
+============================================================
+TLB Electric | Licensed Electrician in Moncton, NB
+
+META DESCRIPTION
+TLB Electric — licensed electrician serving Moncton, NB. Residential & commercial wiring, panel upgrades, EV chargers, and emergency electrical services.
+
+============================================================
+TOP INFO BAR
+============================================================
+506-875-5337 | info@TLBELECTRIC.ca | Greater Moncton, NB
+
+============================================================
+NAVIGATION
+============================================================
+Home | Services (links to the new /services overview page) | About Us | Contact | Get a Free Quote
+
+============================================================
+HERO SECTION
+============================================================
+Eyebrow: Greater Moncton, New Brunswick
+
+Headline: Moncton's Trusted Electrical Contractor
+
+Subheadline: Licensed & insured electrical services for residential and commercial clients across the Greater Moncton area. Done right. Done safe.
+
+Buttons: Request a Free Quote | Call 506-875-5337
+
+Trust badges: Licensed & Insured | Fast Response Times | Quality Workmanship | Serving Greater Moncton
+
+============================================================
+SERVICES SECTION ("What We Do")
+============================================================
+Label: What We Do
+Heading: Electrical Services You Can Count On
+Subheading: From a single outlet to a full custom home, TLB Electric brings skilled, licensed work to every job in Greater Moncton, Dieppe & Riverview.
+
+Displays one tile per service category (6 tiles): Residential Electrical Services, Commercial & Industrial Electrical Services, Electrical Panel & Power Upgrade Services, EV Charger Installation, New Construction, Emergency Services — see the category page documents for each tile's title/description.
+
+Footer line: Don't see your project listed? We handle it all.
+Button: Get a Free Quote
+
+============================================================
+MAP / SERVICE AREA SECTION
+============================================================
+Label: Where We Work
+Heading: Proudly Serving Greater Moncton
+Subheading: TLB Electric is a mobile electrical contractor covering Moncton, Dieppe, Riverview, and the surrounding Greater Moncton area — no storefront visit required, we come to you.
+
+[Google Map embed centered on Moncton, NB]
+
+============================================================
+WHY US SECTION ("About Us")
+============================================================
+Label: Why TLB Electric
+Heading: Built on Trust. Backed by Results.
+Subheading: When you hire TLB Electric, you get a team that takes pride in clean, safe, lasting work and treats your home or business like their own.
+Button: Request Your Free Quote
+
+Point 1 — Licensed & Insured: Every job is performed by a licensed electrician. You get peace of mind knowing your electrical work meets all safety codes.
+
+Point 2 — Prompt & Reliable: We show up on time and get the work done. No runaround, no surprises, just straightforward service you can depend on.
+
+Point 3 — Locally Based: We're a Moncton business serving Moncton people. You're not a ticket number, you're a neighbour.
+
+Point 4 — Transparent Pricing: Free quotes with no hidden fees. We explain the work, give you a clear price, and stick to it.
+
+============================================================
+INSTAGRAM / SOCIAL SECTION
+============================================================
+Label: Follow Our Work
+Heading: See Us On Instagram
+Subheading: Follow along as we share real jobs, before & afters, and updates from the Greater Moncton area.
+Buttons: @TLBELECTRIC (Instagram) | Facebook
+
+============================================================
+REVIEWS SECTION (placeholder pending Google Business Profile access)
+============================================================
+Label: What Customers Say
+Heading: Google Reviews
+Placeholder text: Live Google reviews will display here once TLB Electric's Google Business Profile Place ID is available.
+
+============================================================
+QUOTE CALL-TO-ACTION BANNER
+============================================================
+Heading: Ready to Get Started?
+Subheading: Get a free, no-obligation quote from a licensed Moncton electrician today.
+Buttons: Request a Free Quote | Call Us Now
+
+============================================================
+CONTACT SECTION
+============================================================
+Label: Get In Touch
+Heading: Request a Free Quote
+Subheading: Fill out the form and we'll get back to you. No obligation, no pressure just a straight answer on your project.
+
+Contact details shown: Phone 506-875-5337 | Email info@TLBELECTRIC.ca | Service Area: Greater Moncton, NB
+
+Form fields: First Name, Last Name, Phone Number, Email Address, Service Needed (dropdown: Residential Electrical, Commercial Electrical, Panel Upgrade, EV Charger Installation, New Construction, Emergency Service, Other/Not Sure), Tell Us About Your Project
+
+Submit button: Send My Quote Request
+Success message: Message sent! We'll be in touch.
+Error message: Something went wrong. Please try again or call us at 506-875-5337.
+
+============================================================
+FOOTER
+============================================================
+Tagline: Licensed electrical contractor serving the Greater Moncton area. Quality work. Honest pricing.
+
+Contact: 506-875-5337 | info@TLBELECTRIC.ca
+
+Services column (6 links, one per category): Residential Electrical Services in Moncton, Dieppe & Riverview | Commercial & Industrial Electrical Services | Electrical Panel & Power Upgrade Services | EV Charger Installation | New Construction | Emergency Services
+
+Service Area: Proudly serving: Moncton, Dieppe, Riverview and surrounding communities.
+Button: Get a Free Quote
+
+Copyright line: © [current year] TLB Electric. All rights reserved.
+Legal line: Licensed Electrical Contractor • Moncton, NB

@@ -1,0 +1,77 @@
+---
+// src/components/PageHero.astro
+import Breadcrumbs from './Breadcrumbs.astro';
+interface Crumb { label: string; href: string; }
+interface Props {
+  breadcrumbItems: Crumb[];
+  eyebrow: string;
+  h1: string;
+  intro: string;
+}
+const { breadcrumbItems, eyebrow, h1, intro } = Astro.props;
+---
+
+<section class="page-hero">
+  <div class="container page-hero-content">
+    <Breadcrumbs items={breadcrumbItems} />
+    <p class="page-hero-eyebrow">{eyebrow}</p>
+    <h1 class="page-hero-title">{h1}</h1>
+    <p class="page-hero-intro">{intro}</p>
+    <div class="page-hero-actions">
+      <a href="#contact" class="btn btn-primary">Request a Free Quote</a>
+      <a href="tel:5068755337" class="btn btn-outline">Call 506-875-5337</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .page-hero {
+    background: linear-gradient(135deg, var(--charcoal) 0%, #241f24 100%);
+    padding-top: 160px;
+    padding-bottom: 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .page-hero::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(213, 44, 60, 0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .page-hero-content { position: relative; z-index: 1; }
+  .page-hero-eyebrow {
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin: 1.5rem 0 0.75rem;
+  }
+  .page-hero-title {
+    font-size: clamp(2rem, 4.5vw, 3rem);
+    color: var(--white);
+    margin-bottom: 1rem;
+    max-width: 800px;
+  }
+  .page-hero-intro {
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 640px;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+  .page-hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  @media (max-width: 600px) {
+    .page-hero-actions { flex-direction: column; }
+    .page-hero-actions .btn { width: 100%; justify-content: center; }
+  }
+</style>

@@ -1,0 +1,49 @@
+---
+// src/components/Breadcrumbs.astro
+interface Crumb { label: string; href: string; }
+interface Props { items: Crumb[]; }
+const { items } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol>
+    {items.map((item, i) => (
+      <li>
+        {i < items.length - 1 ? (
+          <a href={`${base}${item.href}`}>{item.label}</a>
+        ) : (
+          <span aria-current="page">{item.label}</span>
+        )}
+        {i < items.length - 1 && <span class="sep" aria-hidden="true">/</span>}
+      </li>
+    ))}
+  </ol>
+</nav>
+
+<style>
+  .breadcrumbs { padding: 0.5rem 0; }
+  .breadcrumbs ol {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    padding: 0;
+    margin: 0;
+  }
+  .breadcrumbs li {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  .breadcrumbs a {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.2s;
+  }
+  .breadcrumbs a:hover { color: var(--white); }
+  .breadcrumbs span[aria-current] { color: var(--white); }
+  .breadcrumbs .sep { color: rgba(255, 255, 255, 0.3); }
+</style>

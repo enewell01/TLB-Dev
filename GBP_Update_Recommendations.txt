@@ -1,0 +1,99 @@
+TLB ELECTRIC — GOOGLE BUSINESS PROFILE UPDATE RECOMMENDATIONS
+Prepared to align the GBP listing with the Core 30 website structure.
+Note: GBP owner access was blocked at the time this was prepared (per
+TLB_Electric_Core30_SEO_Structure.docx, Section 8). Use this file as the
+target to apply once access is restored — nothing here has been pushed
+live to Google.
+
+============================================================
+1. BUSINESS NAME / NAP (confirm exactly matches current listing)
+============================================================
+Name:    TLB Electric
+Phone:   506-875-5337
+Email:   info@TLBELECTRIC.ca
+Website: https://tlbelectric.ca
+Service area: Moncton, Dieppe, Riverview, NB (service-area business —
+no public street address, per confirmed site model)
+
+============================================================
+2. CATEGORIES
+============================================================
+Primary category (required, exact GBP match):
+  Electrician
+
+Recommended secondary categories (2-3 max — current 2026 best practice
+penalizes "category stuffing"; do NOT add all 8-10 the source doc
+mentions as a ceiling):
+  - Electrical installation service
+  - Electrical contractor
+  - Lighting contractor   (only if lighting work is a genuine ongoing
+                            focus — optional third category)
+
+IMPORTANT: Verify exact spelling/casing of each category live in the
+GBP category picker before saving — Google edits its category taxonomy
+roughly 40 times per year, so treat the above as accurate as of this
+writing but not guaranteed current.
+
+============================================================
+3. SERVICES LIST (add under the Services section of the GBP dashboard)
+============================================================
+Each line below is formatted as: Service name | Description (<=300 chars)
+GBP does NOT currently support linking an individual service line to a
+specific website URL (verified via Google's own support documentation,
+not assumed) — the website's internal linking structure (see the new
+Core 30 pages) is what carries that signal, not the GBP services list
+itself.
+
+Residential Electrical:
+  Home Rewiring | Full or partial home rewiring for older or unsafe electrical systems.
+  Outlet & Switch Installation | Installation and replacement of electrical outlets and switches.
+  Lighting Installation & Upgrades | Residential lighting installation, fixture upgrades, and dimmer wiring.
+  Ceiling Fan Installation | Safe, code-compliant ceiling fan installation with proper electrical box support.
+  Home Electrical Inspections | Full home electrical safety inspections for buyers, sellers, and owners.
+  Knob & Tube Wiring Replacement | Replacement of outdated knob-and-tube wiring in older homes.
+  Aluminum Wiring Repair | Repair and remediation of aluminum branch-circuit wiring hazards.
+  Hot Tub & Pool Electrical Hookups | Dedicated circuit installation for hot tubs and pool equipment.
+
+Commercial & Industrial Electrical:
+  Commercial Electrical Wiring | New wiring and electrical buildouts for commercial spaces.
+  Office & Retail Lighting | Lighting design and installation for offices and retail spaces.
+  Commercial Electrical Maintenance | Ongoing electrical maintenance contracts for businesses.
+  Industrial Electrical Services | Electrical installation and repair for industrial facilities.
+  Commercial Lighting Retrofits | LED lighting retrofits, NB Power grant-eligible projects.
+  Electrical Code Compliance & Inspections | Code compliance audits and inspections for businesses.
+
+Panel & Power Upgrades:
+  Electrical Panel Upgrades | Panel capacity upgrades (100A to 200A) for growing electrical loads.
+  Federal Pioneer Panel Replacement | Replacement of older Federal Pioneer electrical panels.
+  Generator Hookups & Generlink Installation | Backup generator hookup and Generlink installation.
+  Circuit Breaker Replacement & Repair | Diagnosis and replacement of faulty circuit breakers.
+  Whole-Home Surge Protection | Whole-home surge protector installation at the main panel.
+
+EV Charging, New Construction & Emergency:
+  Home EV Charger Installation | Level 2 EV charger installation for residential garages/driveways.
+  Commercial EV Charger Installation | EV charging station installation for commercial properties.
+  24/7 Emergency Electrical Repair | Emergency call-out electrical repair, available 24/7.
+  New Construction Electrical Rough-In | Full electrical rough-in for new home construction.
+  Electrical Renovations & Additions | Electrical work for home renovations and additions.
+  Hardwired Smoke & CO Detector Installation | Hardwired, interconnected smoke and CO detector installation.
+
+============================================================
+4. BUSINESS DESCRIPTION (GBP limit: ~750 characters)
+============================================================
+TLB Electric is a licensed and insured electrical contractor serving
+Moncton, Dieppe, and Riverview, New Brunswick. We handle residential
+and commercial electrical work of every size — from a single outlet
+to full home rewiring, panel upgrades, EV charger installation, new
+construction rough-in, and 24/7 emergency electrical repair. Every job
+is performed by a licensed electrician, done to code, with clear
+upfront pricing and no surprises. Free quotes available.
+
+============================================================
+5. WEBSITE / ACTION LINKS
+============================================================
+Website URL:        https://tlbelectric.ca
+Appointment/Quote:  https://tlbelectric.ca/#contact
+Additional links (profile "sameAs" / social):
+  https://www.instagram.com/TLBELECTRIC
+  https://www.facebook.com/p/TLB-Electric-61587323362780/
+

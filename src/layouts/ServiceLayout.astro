@@ -1,0 +1,121 @@
+---
+// src/layouts/ServiceLayout.astro
+import type { CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
+import Layout from './Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import PageHero from '../components/PageHero.astro';
+import TrustBadges from '../components/TrustBadges.astro';
+import RelatedLinks from '../components/RelatedLinks.astro';
+import QuoteCTA from '../components/QuoteCTA.astro';
+import ContactForm from '../components/ContactForm.astro';
+
+interface Props { entry: CollectionEntry<'services'>; }
+const { entry } = Astro.props;
+const { title, h1, metaDescription, targetKeyword, category, intro, overview, localRelevance, relatedServices } = entry.data;
+
+const allServices = await getCollection('services');
+// Service pages are guarded to their own category to prevent stray cross-links.
+// Geo pages deliberately link across categories (parent service + city hub), so
+// they're trusted to declare their own related list.
+const related = relatedServices
+  .map((slug) => allServices.find((s) => s.id === slug))
+  .filter((s): s is CollectionEntry<'services'> =>
+    s !== undefined && (entry.data.type === 'geo' || s.data.category === category));
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: h1,
+  serviceType: targetKeyword,
+  provider: {
+    '@type': 'Electrician',
+    name: 'TLB Electric',
+    telephone: '+15068755337',
+    url: 'https://tlbelectric.ca',
+  },
+  areaServed: [
+    { '@type': 'City', name: 'Moncton' },
+    { '@type': 'City', name: 'Dieppe' },
+    { '@type': 'City', name: 'Riverview' },
+  ],
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://tlbelectric.ca/' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://tlbelectric.ca/services' },
+    { '@type': 'ListItem', position: 3, name: h1, item: `https://tlbelectric.ca/${entry.id}` },
+  ],
+};
+---
+
+<Layout title={title} description={metaDescription} additionalSchemas={[serviceSchema, breadcrumbSchema]}>
+  <Header />
+  <main>
+    <PageHero
+      breadcrumbItems={[
+        { label: 'Home', href: '/' },
+        { label: 'Services', href: '/services' },
+        { label: h1, href: `/${entry.id}` },
+      ]}
+      eyebrow="Greater Moncton, NB"
+      h1={h1}
+      intro={intro}
+    />
+    <TrustBadges />
+    <section class="service-detail">
+      <div class="container">
+        <div class="service-detail-body">
+          <h2 class="section-title">What to Expect</h2>
+          <p class="overview">{overview}</p>
+          {localRelevance && <p class="local-relevance">{localRelevance}</p>}
+          <slot />
+        </div>
+      </div>
+    </section>
+    <RelatedLinks
+      title="Related Services"
+      links={[
+        ...related.map((r) => ({ label: r.data.h1, href: `/${r.id}` })),
+        { label: 'All Electrical Services', href: '/services' },
+      ]}
+    />
+    <QuoteCTA />
+    <ContactForm />
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .service-detail { padding: 5rem 0; background: var(--white); }
+  /* Constrained measure. Full-bleed body text is unreadable now the image is gone. */
+  .service-detail-body {
+    max-width: 760px;
+  }
+  .overview {
+    color: var(--charcoal);
+    line-height: 1.75;
+    margin: 1.25rem 0 1.5rem;
+  }
+  .local-relevance {
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+  .service-detail-body :global(p) {
+    color: var(--charcoal);
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+  }
+  .service-detail-body :global(p:last-child) { margin-bottom: 0; }
+  .service-detail-body :global(h2) {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    color: var(--charcoal);
+    margin: 2.5rem 0 1rem;
+  }
+</style>

@@ -1,0 +1,236 @@
+---
+// src/components/ServiceDirectory.astro
+// Renders the full service directory on /services: one section per category
+// (heading + intro copy + service cards), followed by the Service Areas block.
+// The Service Areas block is the only internal link path to the geo pages;
+// removing it orphans them. See docs/superpowers/specs/2026-08-11-*.md.
+import { getCollection, render } from 'astro:content';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const categories = (await getCollection('categories')).sort((a, b) => a.data.order - b.data.order);
+const allServices = await getCollection('services');
+
+const sections = await Promise.all(
+  categories.map(async (cat) => {
+    const { Content } = await render(cat);
+    const services = allServices
+      .filter((s) => s.data.category === cat.id && s.data.type !== 'geo')
+      .sort((a, b) => a.data.order - b.data.order);
+    return { cat, Content, services };
+  })
+);
+
+// Membership is driven by `city`, not `type`. Moncton's coverage comes from its existing
+// `-moncton` service pages rather than duplicate `-moncton-nb` geo pages, so those appear
+// here as well as in their category section above.
+const cityOrder = ['Moncton', 'Dieppe', 'Riverview'] as const;
+const areaGroups = cityOrder.map((city) => ({
+  city,
+  entries: allServices
+    .filter((s) => s.data.city === city)
+    .sort((a, b) => (a.data.areaOrder ?? a.data.order) - (b.data.areaOrder ?? b.data.order)),
+}));
+---
+
+<div class="service-directory">
+  {sections.map(({ cat, Content, services }) => (
+    <section class="directory-section" id={cat.id}>
+      <div class="directory-section-head">
+        <h2 class="directory-section-title">{cat.data.h1}</h2>
+        <div class="directory-section-intro"><Content /></div>
+      </div>
+      <div class="directory-grid">
+        {services.map((service) => (
+          <a href={`${base}/${service.id}`} class="directory-card">
+            <h3 class="directory-card-title">{service.data.h1}</h3>
+            <p class="directory-card-text">{service.data.intro}</p>
+            <span class="directory-card-link">Learn more &rarr;</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  ))}
+
+  <section class="directory-section directory-areas" id="service-areas">
+    <div class="directory-section-head">
+      <h2 class="directory-section-title">Service Areas</h2>
+      <div class="directory-section-intro">
+        <p>
+          TLB Electric is a mobile electrical contractor covering Moncton, Dieppe, and Riverview.
+          Each area has its own housing stock and its own common electrical problems. The
+          pages below cover what we run into most in each one.
+        </p>
+      </div>
+    </div>
+    <div class="areas-columns">
+      {areaGroups.map((group) => (
+        <div class="area-column">
+          <h3 class="area-column-title">{group.city}</h3>
+          <ul class="area-list">
+            {group.entries.map((entry) => (
+              <li>
+                <a href={`${base}/${entry.id}`} class="area-link">{entry.data.areaLabel ?? entry.data.h1}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </section>
+</div>
+
+<style>
+  .directory-section {
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid var(--gray);
+  }
+
+  .directory-section:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+
+  .directory-section-head {
+    max-width: 760px;
+    margin-bottom: 2rem;
+  }
+
+  .directory-section-title {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    color: var(--charcoal);
+    margin-bottom: 0.875rem;
+    scroll-margin-top: 120px;
+  }
+
+  .directory-section {
+    scroll-margin-top: 120px;
+  }
+
+  .directory-section-intro :global(p) {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+  }
+
+  .directory-section-intro :global(p:last-child) {
+    margin-bottom: 0;
+  }
+
+  .directory-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .directory-card {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    background: var(--white);
+    border: 1px solid var(--gray);
+    border-radius: 8px;
+    padding: 1.75rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+
+  .directory-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 32px rgba(54, 52, 54, 0.1);
+    border-color: var(--red);
+  }
+
+  .directory-card-title {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--charcoal);
+    margin-bottom: 0.625rem;
+  }
+
+  .directory-card-text {
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .directory-card-link {
+    margin-top: auto;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--red);
+  }
+
+  .areas-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .area-column {
+    background: var(--white);
+    border: 1px solid var(--gray);
+    border-radius: 8px;
+    padding: 1.75rem;
+  }
+
+  .area-column-title {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    color: var(--charcoal);
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--red);
+  }
+
+  .area-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .area-list li {
+    margin-bottom: 0.625rem;
+  }
+
+  .area-list li:last-child {
+    margin-bottom: 0;
+  }
+
+  .area-link {
+    font-size: 0.925rem;
+    line-height: 1.55;
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+
+  .area-link:hover {
+    color: var(--red);
+  }
+
+  @media (max-width: 900px) {
+    .directory-grid,
+    .areas-columns {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 560px) {
+    .directory-grid,
+    .areas-columns {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -1,0 +1,17 @@
+PAGE: Our Electrical Services (Services Overview Hub)
+URL: /services
+
+BROWSER TAB TITLE
+Electrical Services in Moncton, NB | TLB Electric
+
+PAGE HEADING (H1)
+Our Electrical Services
+
+META DESCRIPTION
+Residential, commercial, panel upgrades, and EV/emergency electrical services in Moncton, Dieppe & Riverview, NB. Licensed electrician. Free quotes.
+
+INTRO
+TLB Electric covers residential, commercial, panel and power, and EV/emergency electrical work across Moncton, Dieppe, and Riverview. Choose a category below to see the specific services within it.
+
+BODY
+Displays all 6 category cards (Residential Electrical, Commercial & Industrial Electrical, Electrical Panel & Power Upgrades, EV Charger Installation, New Construction, Emergency Services), each linking to its own category page — see the category page documents for each one's title/description.

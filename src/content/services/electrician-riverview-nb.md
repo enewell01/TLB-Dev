@@ -1,0 +1,21 @@
+---
+title: "Electrician in Riverview, NB | TLB Electric"
+h1: "Your Local Electrician in Riverview, NB"
+metaDescription: "Licensed electrician serving Riverview, NB: panel upgrades, rewiring, and repairs for the town's riverside residential neighbourhoods. Free quotes from TLB Electric."
+targetKeyword: "electrician Riverview NB"
+category: "residential-electrical-moncton"
+type: "geo"
+relatedServices: ["home-rewiring-moncton", "home-electrical-inspection-moncton"]
+intro: "Riverview sits along the Petitcodiac River, across from Moncton, and its character is more established and residential than a lot of the newer growth on the Dieppe side. TLB Electric handles residential electrical work throughout the town, including the older, tree-lined streets closer to the water where bungalows and split-levels from the 1960s and 70s often still carry their original panels."
+overview: "General residential and commercial electrical work throughout Riverview, covering wiring and rewiring for older properties, panel upgrades, outlet, switch, and lighting installation, EV charger installation, and emergency repair."
+localRelevance: "A lot of our Riverview calls come from homeowners in the town's older neighbourhoods closer to the river dealing with a panel that's original to the house, alongside newer work further from the water where subdivisions have filled in over the last couple of decades."
+city: "Riverview"
+areaLabel: "Local Electrician"
+order: 1
+---
+
+Riverview reads quieter and more settled than Dieppe's newer subdivisions, and that shows up in the electrical work we do there. A good share of it is homes built decades ago, closer to the river, where the original panel is still in service, sometimes a Federal Pioneer or similar brand now well past its intended lifespan. Those jobs usually start with an honest look at the panel before we talk about anything else, since a new circuit or a hot tub hookup isn't safe to add onto a service that's already at its limit.
+
+Further from the river, in the newer streets that have filled in over the past fifteen to twenty years, the work looks more like what you'd expect in a growing town: finishing basements, adding circuits for home offices, sizing panels for an EV charger down the line.
+
+Riverview residents also commute across the river into Moncton daily, and we schedule around that: early appointments, clear windows, and work that doesn't assume someone's home all day. Whether it's a rewiring project in an older riverside bungalow or a panel upgrade in a newer build, we quote after seeing the panel, not before.

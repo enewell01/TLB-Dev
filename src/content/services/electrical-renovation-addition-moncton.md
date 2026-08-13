@@ -1,0 +1,15 @@
+---
+title: "Electrical Renovations & Additions | TLB Electric"
+h1: "Electrical Renovations & Additions"
+metaDescription: "Electrical work for kitchen, basement, and home addition renovations in Moncton, Dieppe & Riverview, NB. New circuits and panel capacity reviews. Free quotes."
+targetKeyword: "electrical renovation Moncton"
+category: "new-construction-electrician-moncton"
+relatedServices: ["new-construction-electrical-moncton", "basement-development-wiring-moncton", "outdoor-living-electrical-moncton"]
+intro: "Renovating a kitchen, finishing a basement, or adding a room usually means the existing wiring wasn't built for what's planned. TLB Electric handles the electrical side of renovations and additions, from new circuits to full panel capacity reviews, across Moncton, Dieppe, and Riverview."
+overview: "Electrical work for renovations and additions, including new circuits for kitchens, bathrooms, and basements, and rewiring of walls and ceilings opened up during the work. Panel capacity is reviewed before the job starts, and outlet, switch, and lighting placement is planned for the new layout."
+order: 2
+---
+
+A renovation is the one time walls are already open, which makes it the cheapest point to fix wiring that would otherwise mean cutting drywall later. Before we run a single new circuit, we check whether the panel feeding the renovated space can actually support it. A finished basement with a home theatre and a bar fridge draws differently than the unfinished storage room it used to be.
+
+For additions, we coordinate directly with your contractor or builder on timing, matching our rough-in and trim-out to the rest of the build schedule. For renovations where walls are already open, we plan the electrical layout around how the space will actually be used, not just where the old outlets happened to be.

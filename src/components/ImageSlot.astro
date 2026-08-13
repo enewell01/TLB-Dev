@@ -1,0 +1,60 @@
+---
+// src/components/ImageSlot.astro
+interface Props { label: string; src?: string; }
+const { label, src } = Astro.props;
+---
+{src ? (
+  <!-- IMAGE SLOT: placeholder stock photo for "{label}", replace with a real project photo when available -->
+  <figure class="image-slot image-slot-photo">
+    <img src={src} alt={`Placeholder photo, ${label}`} loading="lazy" />
+    <figcaption>Placeholder photo, add a real project photo here</figcaption>
+  </figure>
+) : (
+  <div class="image-slot" role="img" aria-label={`Placeholder for ${label} photo`}>
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+    </svg>
+    <span>{label}</span>
+  </div>
+)}
+
+<style>
+  .image-slot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    aspect-ratio: 16 / 10;
+    background: var(--off-white);
+    border: 1.5px dashed var(--gray);
+    border-radius: 8px;
+    color: #b3b3b3;
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .image-slot-photo {
+    border: none;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .image-slot-photo img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    display: block;
+  }
+
+  .image-slot-photo figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-align: center;
+  }
+</style>
