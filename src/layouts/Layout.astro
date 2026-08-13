@@ -18,7 +18,12 @@ const ogImageURL = new URL('/logo-dark.png', Astro.site);
 const schema = {
   "@context": "https://schema.org",
   "@type": "Electrician",
-  "name": "TLB Electric",
+  // Matches the Google Business Profile listing exactly; Google weighs name
+  // consistency between the listing and the site. The trading name is carried
+  // by alternateName so both resolve to the same business.
+  "name": "TLB Electric Inc.",
+  "alternateName": "TLB Electric",
+  "legalName": "TLB Electric Inc.",
   "image": ogImageURL.toString(),
   "telephone": "+15068755337",
   "email": "info@TLBELECTRIC.ca",

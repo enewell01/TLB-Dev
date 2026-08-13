@@ -55,8 +55,11 @@ const categories = (await getCollection('categories'))
 
   <div class="footer-bottom">
     <div class="container footer-bottom-inner">
-      <p>&copy; {currentYear} TLB Electric. All rights reserved.</p>
-      <p class="footer-legal">Licensed Electrical Contractor &bull; Moncton, NB</p>
+      <p>&copy; {currentYear} TLB Electric Inc. All rights reserved.</p>
+      <p class="footer-legal">
+        <a href={`${base}/privacy`} class="footer-legal-link">Privacy Policy</a>
+        &bull; Licensed Electrical Contractor &bull; Moncton, NB
+      </p>
     </div>
   </div>
 </footer>
@@ -170,6 +173,16 @@ const categories = (await getCollection('categories'))
   .footer-legal {
     font-family: var(--font-heading);
     font-weight: 600;
+  }
+
+  .footer-legal-link {
+    color: rgba(255, 255, 255, 0.55);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .footer-legal-link:hover {
+    color: var(--white);
   }
 
   @media (max-width: 900px) {

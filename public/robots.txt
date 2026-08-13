@@ -1,4 +1,68 @@
+# TLB Electric Inc. | https://tlbelectric.ca
+# Everything on this site is public information about our services and
+# service area. All crawlers are welcome.
+
 User-agent: *
 Allow: /
 
+# AI and LLM crawlers are named individually below. The wildcard above
+# already permits them, but several vendors document their own token and
+# some operators only look for an exact match, so being explicit removes
+# any ambiguity about whether this site may be read and cited.
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# Google AI, separate from Googlebot and does not affect Search ranking
+User-agent: Google-Extended
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Microsoft, Meta, Amazon, Common Crawl, ByteDance
+User-agent: bingbot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# A plain language summary of this site for language models is at /llms.txt
 Sitemap: https://tlbelectric.ca/sitemap-index.xml

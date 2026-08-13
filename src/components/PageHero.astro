@@ -7,8 +7,11 @@ interface Props {
   eyebrow: string;
   h1: string;
   intro: string;
+  // Legal pages keep the hero but drop the quote and call buttons, which read
+  // oddly above a privacy policy.
+  showActions?: boolean;
 }
-const { breadcrumbItems, eyebrow, h1, intro } = Astro.props;
+const { breadcrumbItems, eyebrow, h1, intro, showActions = true } = Astro.props;
 ---
 
 <section class="page-hero">
@@ -17,10 +20,12 @@ const { breadcrumbItems, eyebrow, h1, intro } = Astro.props;
     <p class="page-hero-eyebrow">{eyebrow}</p>
     <h1 class="page-hero-title">{h1}</h1>
     <p class="page-hero-intro">{intro}</p>
-    <div class="page-hero-actions">
-      <a href="#contact" class="btn btn-primary">Request a Free Quote</a>
-      <a href="tel:5068755337" class="btn btn-outline">Call 506-875-5337</a>
-    </div>
+    {showActions && (
+      <div class="page-hero-actions">
+        <a href="#contact" class="btn btn-primary">Request a Free Quote</a>
+        <a href="tel:5068755337" class="btn btn-outline">Call 506-875-5337</a>
+      </div>
+    )}
   </div>
 </section>
 

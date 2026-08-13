@@ -1,0 +1,135 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import PageHero from '../components/PageHero.astro';
+
+const title = 'Privacy Policy | TLB Electric';
+const description =
+  'How TLB Electric Inc. handles personal information collected through tlbelectric.ca, including quote requests, third party services, and your rights under PIPEDA.';
+
+// Kept in one place so the hero date and the closing date cannot drift apart.
+const lastUpdated = 'August 12, 2026';
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://tlbelectric.ca/' },
+    { '@type': 'ListItem', position: 2, name: 'Privacy Policy', item: 'https://tlbelectric.ca/privacy' },
+  ],
+};
+---
+
+<Layout title={title} description={description} additionalSchemas={[breadcrumbSchema]}>
+  <Header />
+  <main>
+    <PageHero
+      breadcrumbItems={[{ label: 'Home', href: '/' }, { label: 'Privacy Policy', href: '/privacy' }]}
+      eyebrow="Legal"
+      h1="Privacy Policy"
+      intro="What this website collects, why it is collected, and what happens to it."
+      showActions={false}
+    />
+
+    <section class="legal">
+      <div class="container legal-inner">
+        <p class="legal-updated">Last updated {lastUpdated}</p>
+
+        <p>
+          TLB Electric Inc. is a licensed electrical contractor based in Moncton, New Brunswick. This
+          policy explains how personal information is handled on tlbelectric.ca. It covers this website
+          only, and not any other site you may reach from a link here.
+        </p>
+
+        <h2>Information you give us</h2>
+        <p>
+          The only personal information this site asks for is what you enter into the quote request
+          form. That form collects your first and last name, your phone number, your email address, the
+          type of service you are interested in, and whatever details you choose to write in the message
+          field.
+        </p>
+        <p>
+          We use it for one purpose, which is to reply to your request and arrange the work you asked
+          about. We do not sell it, rent it, or pass it to anyone for marketing.
+        </p>
+
+        <h2>How the form reaches us</h2>
+        <p>
+          The quote form is delivered by Web3Forms, a form handling service. When you submit the form,
+          its contents pass through Web3Forms on the way to our inbox. They handle the message on our
+          behalf in order to deliver it, and for no other purpose of ours.
+        </p>
+
+        <h2>Information collected automatically</h2>
+        <p>
+          This website uses no analytics, no advertising pixels, and no tracking cookies. It sets no
+          cookies of its own.
+        </p>
+        <p>
+          Two other services receive your device's IP address as an ordinary part of loading the page,
+          in the way any server does when it sends a file to your browser. Typefaces come from Google
+          Fonts, and the Instagram section is displayed through a widget from Behold. Neither is used by
+          us to identify or follow visitors.
+        </p>
+        <p>
+          The site is hosted on Cloudflare Pages, which keeps standard server logs that include IP
+          addresses, for security and reliability.
+        </p>
+
+        <h2>How long it is kept</h2>
+        <p>
+          Quote requests stay in our email for as long as we need them to serve you and to keep ordinary
+          business records. Once a request is no longer needed, it is deleted.
+        </p>
+
+        <h2>Your rights</h2>
+        <p>
+          Under Canada's Personal Information Protection and Electronic Documents Act, you may ask what
+          personal information we hold about you, ask us to correct it, and ask us to delete it. You may
+          also withdraw your consent at any time, although we may then be unable to act on a quote
+          request that is still open.
+        </p>
+        <p>
+          To make any of those requests, or to ask a question about this policy, email
+          <a href="mailto:info@TLBELECTRIC.ca">info@TLBELECTRIC.ca</a> or call
+          <a href="tel:5068755337">506-875-5337</a>.
+        </p>
+
+        <h2>Changes to this policy</h2>
+        <p>
+          If this policy changes, the updated version will be posted on this page with a new date at the
+          top. This version is dated {lastUpdated}.
+        </p>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .legal { padding: 4rem 0 5rem; background: var(--white); }
+  .legal-inner { max-width: 760px; }
+  .legal-updated {
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 2rem;
+  }
+  .legal h2 {
+    font-size: 1.35rem;
+    margin: 2.5rem 0 0.85rem;
+  }
+  .legal p {
+    line-height: 1.8;
+    margin-bottom: 1.1rem;
+  }
+  .legal a {
+    color: var(--red);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+</style>
