@@ -1,7 +1,7 @@
 # Security headers for Cloudflare Pages.
 #
 # Copied verbatim into dist/ at build time and read by Cloudflare Pages, which
-# serves tlbelectric.ca. GitHub Pages (the /TLB-Dev preview built by
+# serves tlbelectric.ca. GitHub Pages (the /TLBv2 preview built by
 # .github/workflows/deploy.yml) ignores this file — GH Pages cannot set custom
 # headers, so the preview will always score worse than production. Expected.
 #

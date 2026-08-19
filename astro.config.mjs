@@ -3,7 +3,14 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
 const isCloudflare = process.env.CF_PAGES === '1';
-const base = isCloudflare ? undefined : '/TLB-Dev';
+
+// GitHub Pages serves a project site from /<repo>, so the build needs that as
+// its base. Derive it from the slug Actions exports (owner/repo) rather than
+// hardcoding: the literal '/TLB-Dev' here outlived the repo it named, and every
+// asset 404d on the Pages preview until it was noticed. The fallback only
+// applies to local builds, where nothing is serving under a path prefix anyway.
+const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1] ?? 'TLBv2';
+const base = isCloudflare ? undefined : `/${repoName}`;
 
 /**
  * Prefixes root-relative links written inside markdown bodies with the configured
