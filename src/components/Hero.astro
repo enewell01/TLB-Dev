@@ -1,7 +1,22 @@
 ---
+// Hero background. `auto=format` lets Unsplash negotiate AVIF/WebP per browser
+// instead of always shipping JPEG; widths are appended per srcset entry so
+// phones never download the 1920px file.
+const U = 'https://images.unsplash.com/photo-1758101755915-462eddc23f57?q=75&auto=format&fit=crop';
 ---
 
 <section class="hero" id="home">
+  <img
+    class="hero-bg"
+    src={`${U}&w=1920`}
+    srcset={[640, 960, 1280, 1920, 2560].map((w) => `${U}&w=${w} ${w}w`).join(", ")}
+    sizes="100vw"
+    width="1920"
+    height="1280"
+    alt=""
+    fetchpriority="high"
+    decoding="async"
+  />
   <div class="hero-overlay"></div>
   <div class="container hero-content">
     <p class="hero-eyebrow">Greater Moncton, New Brunswick</p>
@@ -56,16 +71,24 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background:
-      url('https://images.unsplash.com/photo-1758101755915-462eddc23f57?fm=jpg&q=80&w=1920&auto=format&fit=crop')
-      center center / cover no-repeat;
+    background: #141214;
     overflow: hidden;
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
   }
 
   .hero::before {
     content: '';
     position: absolute;
     inset: 0;
+    z-index: 1;
     background:
       linear-gradient(to right, rgba(20, 18, 20, 0.92) 45%, rgba(20, 18, 20, 0.65) 100%),
       radial-gradient(ellipse at 80% 50%, rgba(213, 44, 60, 0.15) 0%, transparent 60%);
@@ -75,13 +98,14 @@
   .hero-overlay {
     position: absolute;
     inset: 0;
+    z-index: 1;
     background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.015'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     pointer-events: none;
   }
 
   .hero-content {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     padding-top: 140px;
     padding-bottom: 80px;
   }
@@ -155,6 +179,7 @@
   }
 
   .hero-scroll-indicator {
+    z-index: 2;
     position: absolute;
     bottom: 2rem;
     left: 50%;

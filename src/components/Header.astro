@@ -27,7 +27,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   <div class="header-main">
     <div class="container header-inner">
       <a href={`${base}/`} class="logo-link" aria-label="TLB Electric Home">
-        <img src={`${base}/tlb_altered.svg`} alt="TLB Electric" class="logo" />
+        <img src={`${base}/tlb_altered.svg`} alt="TLB Electric" class="logo" width="136" height="88" decoding="async" />
       </a>
 
       <nav class="nav" aria-label="Main navigation">
@@ -68,13 +68,23 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobile-menu');
 
+  let scrolled = false;
+  let ticking = false;
+
+  function syncHeader() {
+    ticking = false;
+    const next = window.scrollY > 50;
+    if (next === scrolled) return;
+    scrolled = next;
+    header?.classList.toggle('scrolled', next);
+  }
+
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      header?.classList.add('scrolled');
-    } else {
-      header?.classList.remove('scrolled');
-    }
-  });
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(syncHeader);
+  }, { passive: true });
+  syncHeader();
 
   hamburger?.addEventListener('click', () => {
     const isOpen = mobileMenu?.classList.toggle('open');

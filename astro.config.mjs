@@ -32,6 +32,10 @@ export default defineConfig({
   site: isCloudflare ? 'https://tlbelectric.ca' : 'https://enewell01.github.io',
   base,
   integrations: [sitemap()],
+  prefetch: {
+    prefetchAll: true,
+    defaultStrategy: 'hover',
+  },
   markdown: {
     rehypePlugins: [rehypeBaseLinks],
   },

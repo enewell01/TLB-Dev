@@ -6,7 +6,7 @@
 // 4. Replace YOUR_FEED_ID_HERE below with that Feed ID
 // The feed will automatically stay in sync with new Instagram posts & videos.
 
-const BEHOLD_FEED_ID = 'RSV1spHsRZiUOF4lffUg';
+const BEHOLD_FEED_ID: string = 'RSV1spHsRZiUOF4lffUg';
 const isConfigured = BEHOLD_FEED_ID !== 'YOUR_FEED_ID_HERE';
 ---
 
@@ -53,7 +53,7 @@ const isConfigured = BEHOLD_FEED_ID !== 'YOUR_FEED_ID_HERE';
     ) : (
       <div class="feed-placeholder">
         <div class="placeholder-grid">
-          {Array.from({ length: 6 }).map((_, i) => (
+          {Array.from({ length: 6 }).map(() => (
             <div class="placeholder-cell">
               <div class="placeholder-inner">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -73,7 +73,32 @@ const isConfigured = BEHOLD_FEED_ID !== 'YOUR_FEED_ID_HERE';
 </section>
 
 {isConfigured && (
-  <script src="https://w.behold.so/widget.js" type="module"></script>
+  <script is:inline>
+    // The Behold widget is a third-party module for a section well below the fold.
+    // Injecting it only as the section approaches the viewport keeps it off the
+    // critical path instead of competing with the hero image for bandwidth.
+    (() => {
+      const section = document.getElementById("instagram");
+      if (!section) return;
+      let loaded = false;
+      const load = () => {
+        if (loaded) return;
+        loaded = true;
+        const el = document.createElement("script");
+        el.src = "https://w.behold.so/widget.js";
+        el.type = "module";
+        document.head.appendChild(el);
+      };
+      if (!("IntersectionObserver" in window)) return load();
+      const io = new IntersectionObserver((entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          io.disconnect();
+          load();
+        }
+      }, { rootMargin: "400px" });
+      io.observe(section);
+    })();
+  </script>
 )}
 
 <style>
