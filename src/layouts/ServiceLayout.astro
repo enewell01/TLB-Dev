@@ -10,10 +10,20 @@ import TrustBadges from '../components/TrustBadges.astro';
 import RelatedLinks from '../components/RelatedLinks.astro';
 import QuoteCTA from '../components/QuoteCTA.astro';
 import ContactForm from '../components/ContactForm.astro';
+import GoogleReviews from '../components/GoogleReviews.astro';
+import MapEmbed from '../components/MapEmbed.astro';
+import { SITE_URL, BUSINESS_ID } from '../lib/business';
 
 interface Props { entry: CollectionEntry<'services'>; }
 const { entry } = Astro.props;
 const { title, h1, metaDescription, targetKeyword, category, intro, overview, localRelevance, relatedServices } = entry.data;
+
+// Geo pages are the ones competing for "electrician in <city>" head terms, where
+// proximity and social proof do the work. They get the reviews carousel and the
+// service-area map; the ~40 individual service pages deliberately don't, since
+// carrying 43 review cards on every one of them costs page weight on pages whose
+// job is to answer a specific job question and route to the quote form.
+const isGeo = entry.data.type === 'geo';
 
 const allServices = await getCollection('services');
 // Service pages are guarded to their own category to prevent stray cross-links.
@@ -29,12 +39,10 @@ const serviceSchema = {
   '@type': 'Service',
   name: h1,
   serviceType: targetKeyword,
-  provider: {
-    '@type': 'Electrician',
-    name: 'TLB Electric',
-    telephone: '+15068755337',
-    url: 'https://tlbelectric.ca',
-  },
+  // Reference, not a redefinition. Layout.astro emits the full business node under
+  // this @id on every page, so pointing at it here joins the Service to that one
+  // entity instead of introducing a second, thinner copy of the same business.
+  provider: { '@id': BUSINESS_ID },
   areaServed: [
     { '@type': 'City', name: 'Moncton' },
     { '@type': 'City', name: 'Dieppe' },
@@ -46,9 +54,9 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://tlbelectric.ca/' },
-    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://tlbelectric.ca/services' },
-    { '@type': 'ListItem', position: 3, name: h1, item: `https://tlbelectric.ca/${entry.id}` },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: `${SITE_URL}/services` },
+    { '@type': 'ListItem', position: 3, name: h1, item: `${SITE_URL}/${entry.id}` },
   ],
 };
 ---
@@ -84,6 +92,8 @@ const breadcrumbSchema = {
         { label: 'All Electrical Services', href: '/services' },
       ]}
     />
+    {isGeo && <GoogleReviews />}
+    {isGeo && <MapEmbed />}
     <QuoteCTA />
     <ContactForm />
   </main>

@@ -13,17 +13,22 @@
 # ---------------------------------------------------------------------------
 # Origins allowed by the CSP, and why each is needed:
 #
-#   fonts.googleapis.com   Google Fonts stylesheet             Layout.astro
-#   fonts.gstatic.com      the woff2 files that stylesheet pulls
-#   images.unsplash.com    hero background image               Hero.astro
-#   w.behold.so            Instagram widget script             InstagramFeed.astro
-#   feeds.behold.so        the feed JSON that widget fetches
-#   behold.pictures        Behold's image CDN
-#   *.cdninstagram.com     Instagram media served into the feed
-#   api.web3forms.com      quote form submission               ContactForm.astro
-#   maps.google.com        map iframe — MapEmbed.astro is commented out of
-#                          index.astro today, but is pre-allowed so re-enabling
-#                          it does not silently break against this policy
+#   fonts.googleapis.com      Google Fonts stylesheet          Layout.astro
+#   fonts.gstatic.com         the woff2 files that stylesheet pulls
+#   www.googletagmanager.com  the gtag.js loader               Layout.astro
+#   *.google-analytics.com    where gtag.js sends its hits, including the
+#                             regional collectors (region1., region2., ...)
+#   *.analytics.google.com    Google Signals, used when the GA4 property has
+#                             it switched on
+#   images.unsplash.com       hero background image            Hero.astro
+#   w.behold.so               Instagram widget script          InstagramFeed.astro
+#   feeds.behold.so           the feed JSON that widget fetches
+#   behold.pictures           Behold's image CDN
+#   *.cdninstagram.com        Instagram media served into the feed
+#   api.web3forms.com         quote form submission            ContactForm.astro
+#   maps.google.com           map iframe — MapEmbed.astro is commented out of
+#                             index.astro today, but is pre-allowed so re-enabling
+#                             it does not silently break against this policy
 #
 # Cloudflare's own /cdn-cgi/ email-obfuscation script is same-origin, so 'self'
 # already covers it.
@@ -75,7 +80,7 @@
   Cross-Origin-Opener-Policy: same-origin
   Cross-Origin-Resource-Policy: same-origin
   ! Access-Control-Allow-Origin
-  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self' https://api.web3forms.com; script-src 'self' 'unsafe-inline' https://w.behold.so; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com https://behold.pictures https://*.cdninstagram.com; connect-src 'self' https://api.web3forms.com https://feeds.behold.so; frame-src https://maps.google.com https://www.google.com; manifest-src 'self'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self' https://api.web3forms.com; script-src 'self' 'unsafe-inline' https://w.behold.so https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com https://behold.pictures https://*.cdninstagram.com https://www.googletagmanager.com https://*.google-analytics.com; connect-src 'self' https://api.web3forms.com https://feeds.behold.so https://www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com; frame-src https://maps.google.com https://www.google.com; manifest-src 'self'; upgrade-insecure-requests
 
 /og-image.png
   Cross-Origin-Resource-Policy: cross-origin
