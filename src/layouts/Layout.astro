@@ -1,4 +1,7 @@
 ---
+import { getCollection } from 'astro:content';
+import { SITE_URL, BUSINESS_ID, BUSINESS_GEO } from '../lib/business';
+
 interface Props {
   title?: string;
   description?: string;
@@ -11,16 +14,26 @@ const {
   additionalSchemas = [],
 } = Astro.props;
 
-const siteUrl = 'https://tlbelectric.ca';
+const siteUrl = SITE_URL;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 // 1200x630, the size every social platform actually renders. The old value was a
 // 4500x2917 PNG with an alpha channel, so each scrape pulled 113KB and let the
 // platform pick whatever background sat behind the logo.
 const ogImageURL = new URL('/og-image.png', Astro.site);
 
+// Derived rather than hardcoded: the review collection has already grown 16 -> 43,
+// and a literal here would have silently gone stale each time. Every published
+// review is a five-star Google review, and all of them render on the homepage, so
+// the aggregate stays consistent with what a visitor (and Google) can actually see.
+const reviews = await getCollection('reviews');
+const reviewCount = reviews.length;
+
 const schema = {
   "@context": "https://schema.org",
-  "@type": "Electrician",
+  // LocalBusiness carries the properties Google reads for local results; Electrician
+  // keeps the specific trade type. Declaring both is valid and avoids losing either.
+  "@type": ["LocalBusiness", "Electrician"],
+  "@id": BUSINESS_ID,
   // Matches the Google Business Profile listing exactly; Google weighs name
   // consistency between the listing and the site. The trading name is carried
   // by alternateName so both resolve to the same business.
@@ -39,6 +52,24 @@ const schema = {
     "addressLocality": "Moncton",
     "addressRegion": "NB",
     "addressCountry": "CA"
+  },
+  // No street address is published (mobile contractor, no storefront), so geo is
+  // what anchors the business to a point on the map for local results.
+  "geo": BUSINESS_GEO,
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "17:00"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "bestRating": "5",
+    "worstRating": "1",
+    "reviewCount": reviewCount
   },
   "areaServed": [
     { "@type": "City", "name": "Moncton" },
@@ -107,12 +138,25 @@ const schema = {
     <link rel="apple-touch-icon" href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/favicon.svg`} />
 
     <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@400;600&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Google tag (gtag.js). is:inline on both keeps Astro from bundling them:
+         the loader has to stay a plain async request to Google's own origin, and
+         the config snippet has to run as written rather than as a hoisted module. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZC3HNMEL43" is:inline></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-ZC3HNMEL43');
+    </script>
   </head>
   <body>
     <slot />
